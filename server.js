@@ -61,6 +61,10 @@ app.ws('/timer/status', function(ws, req) {
   });
 })
 
+app.get("/", function (request, response) {
+  response.send('MMM-PomoDone Websocket proxy');
+});
+
 app.get("/timer/status", function (request, response) {
   console.log("receiving request from magicmirror");
   
